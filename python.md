@@ -47,6 +47,13 @@ len(df.shape)
 df.shape[1]   # columns
 ```
 
+## One variable
+```
+df.varname.mean()
+df.varname.median()
+```
+
+
 ## Frequency - 1-way table
 On a single variable
 ```
