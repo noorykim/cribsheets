@@ -44,7 +44,12 @@ df.shape[1]   # columns
 ## Frequency - 1-way table
 df.groupby('var_to_summarize').count()
 ```
+# absolute numbers
+df["varname"].value_counts()
 df_summary = df.groupby('varname').count()
+
+# percentages
+df["varname"].value_counts(normalize = True)
 ```
 
 
