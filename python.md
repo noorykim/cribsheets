@@ -29,6 +29,12 @@ df = df.rename({'old1':'new1'. 'old2':'new2'}, inplace=False)
 df_melted = pd.melt(df, id_vars=['id1', 'id2'])
 ```
 
+# Impute data
+
+```
+df['varname'].fillna(imputed_values)
+```
+
 # Summarize data
 
 ## Dimensions
@@ -59,6 +65,14 @@ train[train.Sex == 'male']["Survived"].value_counts()
 train["Survived"][train.Sex == 'male'].value_counts()
 ```
 
+## Decision Trees
+```
+# Import the Numpy library
+import numpy as np
+
+# Import 'tree' from scikit-learn library
+from sklearn import tree
+```
 
 
 # Key
