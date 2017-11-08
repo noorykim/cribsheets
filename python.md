@@ -1,6 +1,13 @@
-# 
+# Python
 
-# Reshape data set
+# Massage data
+
+## Rename columns
+
+df.rename()
+```
+df = df.rename({'old1':'new1'. 'old2':'new2'}, inplace=False) 
+```
 
 ## Transpose data sets
 
@@ -11,8 +18,14 @@ df_melted = pd.melt(df, id_vars=['id1', 'id2'])
 
 
 
+# Summarize data
+
+
 
 # Key
+
+df = dataFrame
+
 
 pd = pandas
 
