@@ -65,6 +65,10 @@ train[train.Sex == 'male']["Survived"].value_counts()
 train["Survived"][train.Sex == 'male'].value_counts()
 ```
 
+## More stratified tables
+
+[Erik Marsja](https://www.marsja.se/pandas-python-descriptive-statistics/)
+
 
 # Analyze/Predict using data
 
