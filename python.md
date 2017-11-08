@@ -1,5 +1,6 @@
 # Python
 
+
 # Massage data
 
 ## Rename columns
@@ -17,8 +18,26 @@ df_melted = pd.melt(df, id_vars=['id1', 'id2'])
 ```
 
 
-
 # Summarize data
+
+## Dimensions
+```
+df.shape      # dimensions
+
+df.shape[0]   # rows
+len(df.shape)
+
+df.shape[1]   # columns
+```
+
+## Frequency - 1-way table
+
+df.groupby()
+```
+df_summary = df.groupby('varname').count()
+```
+
+
 
 
 
