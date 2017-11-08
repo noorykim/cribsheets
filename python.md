@@ -52,7 +52,12 @@ df_summary = df.groupby('varname').count()
 df["varname"].value_counts(normalize = True)
 ```
 
-
+On a subset of data - note that order of subsetting vs column selection doesn't matter
+```
+# Titanic : Males that survived vs males that passed away
+train[train.Sex == 'male']["Survived"].value_counts()
+train["Survived"][train.Sex == 'male'].value_counts()
+```
 
 
 
