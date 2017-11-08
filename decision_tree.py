@@ -1,5 +1,5 @@
 # Decision Trees 
-# Source : https://campus.datacamp.com/courses/kaggle-python-tutorial-on-machine-learning/predicting-with-decision-trees?ex=6
+# Source : https://campus.datacamp.com/courses/kaggle-python-tutorial-on-machine-learning/predicting-with-decision-trees
 
 # Import the Numpy library
 import numpy as np
