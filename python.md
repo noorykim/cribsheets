@@ -42,7 +42,7 @@ df.shape[1]   # columns
 ```
 
 ## Frequency - 1-way table
-df.groupby('var_to_summarize').count()
+On a single variable
 ```
 # absolute numbers
 df["varname"].value_counts()
@@ -52,7 +52,7 @@ df_summary = df.groupby('varname').count()
 df["varname"].value_counts(normalize = True)
 ```
 
-On a subset of data - note that order of subsetting vs column selection doesn't matter
+On a subset of data - note that order of subsetting vs column selection doesn't change the outcome (although runtime may be affected)
 ```
 # Titanic : Males that survived vs males that passed away
 train[train.Sex == 'male']["Survived"].value_counts()
