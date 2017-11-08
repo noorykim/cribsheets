@@ -1,22 +1,33 @@
 # Python
 
+# Import data
+
+## Jupyter
+```
+%matplotlib inline        # Jupyter needs this
+import matplotlib as mp
+```
+
+# Peek at data
+```
+df.head()            # 1st 6 rows
+df.tail()            # last 6 rows
+df.describe()        # max min etc
+```
 
 # Massage data
 
 ## Rename columns
-
 df.rename()
 ```
 df = df.rename({'old1':'new1'. 'old2':'new2'}, inplace=False) 
 ```
 
 ## Transpose data sets
-
 [pd.melt()](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.melt.html) : change flat file to long file
 ```
 df_melted = pd.melt(df, id_vars=['id1', 'id2'])
 ```
-
 
 # Summarize data
 
@@ -31,8 +42,7 @@ df.shape[1]   # columns
 ```
 
 ## Frequency - 1-way table
-
-df.groupby()
+df.groupby('var_to_summarize').count()
 ```
 df_summary = df.groupby('varname').count()
 ```
