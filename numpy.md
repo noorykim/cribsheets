@@ -10,10 +10,11 @@ Redefine as numpy array
 arr = np.array(arr)
 ```
 
-Generate an array from 1 to n by 2
+Generate an array from 1 to n 
 ```
+a = list(range(1, n+1))
 a = np.arange(n+1)
-a = np.arrange(1, n+1, 2)
+a = np.arrange(1, n+1, 2)  # by increments of 2
 ```
 
 Convert a string of numbers into an array
