@@ -18,9 +18,18 @@ i3 = np.eye(3)        # identity matrix
 
 
 Reverse the order of an array : [np.flip()](https://docs.scipy.org/doc/numpy-dev/reference/generated/numpy.flip.html)
-```
-a1 = np.flip(a1, 0)         # 1D / horizontal
 
+1D
+```
+a1.reverse()
+
+a1 = a1[::-1]
+
+a1 = np.flip(a1, 0)         # 1D / horizontal
+```
+
+2D
+```
 a2 = np.flip(a2, 0)         # 2D / horizontal
 a2 = np.flip(a2, 1)         # 2D / vertical
 ```
