@@ -5,11 +5,25 @@ import numpy as np
 
 # Arrays
 
-Create an array from 1 to n by 2
+Generate an array from 1 to n by 2
 ```
 a = np.arange(n+1)
 a = np.arrange(1, n+1, 2)
 ```
+
+Convert a string of numbers into an array
+```
+>>> a = '1 3 5'
+
+>>> arr = a.strip().split(' ')
+>>> arr
+['1', '3', '5']
+
+>>> arr = list(map(int, a.strip().split(' ')))
+>>> arr
+[1, 3, 5]
+```
+
 
 Generate a matrix
 ```
