@@ -5,6 +5,11 @@ import numpy as np
 
 # Arrays
 
+Redefine as numpy array
+```
+arr = np.array(arr)
+```
+
 Generate an array from 1 to n by 2
 ```
 a = np.arange(n+1)
@@ -31,7 +36,7 @@ i3 = np.eye(3)        # identity matrix
 ```
 
 
-Reverse the order of an array : [np.flip()](https://docs.scipy.org/doc/numpy-dev/reference/generated/numpy.flip.html)
+## Reverse the order of an array : [np.flip()](https://docs.scipy.org/doc/numpy-dev/reference/generated/numpy.flip.html)
 
 1D
 ```
@@ -58,12 +63,29 @@ array([[0, 1],
        [2, 3],
        [4, 5]])
 ```
+
+## Extend vs Append
+```
+>>> x = [1,2,3]
+>>> y = [4,5,6]
+
+>>> x.append(y)
+>>> x
+[1, 2, 3, [4, 5, 6]]
+
+>>> x + y
+[1, 2, 3, 4, 5, 6]
+
+>>> x.extend(y)
+>>> x
+[1, 2, 3, 4, 5, 6] 
+```
+
 ## Transpose
 ```
-my_array = numpy.array([[1,2,3],
-                        [4,5,6]])
 arr = np.transpose(arr)
 ```
+
 ## Flatten
 Creates a copy of the input array flattened to one dimension.
 ```
