@@ -48,11 +48,28 @@ a2 = np.flip(a2, 0)         # 2D / horizontal
 a2 = np.flip(a2, 1)         # 2D / vertical
 ```
 
-Change the dimensions of an array : ar.shape(m, n), [np.reshape(ar, (m, n))](https://docs.scipy.org/doc/numpy-dev/reference/generated/numpy.reshape.html)
+## Change the dimensions of an array 
+- ar.shape(m, n)
+- [np.reshape(ar, (m, n))](https://docs.scipy.org/doc/numpy-dev/reference/generated/numpy.reshape.html)
 ```
 >>> a = np.arange(6).reshape((3, 2))
 >>> a
 array([[0, 1],
        [2, 3],
        [4, 5]])
+```
+## Transpose
+```
+my_array = numpy.array([[1,2,3],
+                        [4,5,6]])
+arr = np.transpose(arr)
+```
+## Flatten
+Creates a copy of the input array flattened to one dimension.
+```
+>>> arr = [1, 2, 3, 4, 5, 6]
+
+>>> arr = arr.flatten()
+>>> arr
+[1 2 3 4 5 6]
 ```
